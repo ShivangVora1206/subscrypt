@@ -47,7 +47,7 @@ class Subscrypt:
         else:
             raise Exception("Data is empty")
         
-    def repack(self, filename):
+    def frag(self, filename):
         if not filename:
             raise Exception("Filename is empty")
         try:
@@ -84,7 +84,7 @@ class Subscrypt:
             print(e)
             raise Exception("Error in encrypting")
     
-    def depack(self, filename, divs, licenseFile):
+    def defrag(self, filename, divs, licenseFile):
         if not filename:
             raise Exception("Filename is empty")
         if not licenseFile:
