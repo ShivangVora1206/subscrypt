@@ -1,5 +1,5 @@
 from subscrypt import Subscrypt
 
 sp = Subscrypt()
-sp.encrypt("sample.jpg")
-sp.decrypt("sample.jpg", 4, "license.enc")
+sp.repack("sample.jpg")
+sp.depack("sample.jpg", 4, "license.enc")
